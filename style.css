@@ -7,6 +7,10 @@
 body { background-color: #18191e; overflow-x: hidden;}
 h1 { font-size: 2.5rem; font-weight: 900; }
 h2 { font-size: 2rem; font-weight: 900; }
+.monolite { /* Делает объект полностью недоступным для взаимодействия*/
+	user-select: none;
+	pointer-events: none;
+}
 .screen1 {
 	background: url("images/screen1_background.png") top center no-repeat;
 	z-index: -3;
@@ -28,7 +32,7 @@ h2 { font-size: 2rem; font-weight: 900; }
 	height: 116px;
 }
 
-.header_logo { width: 10%; pointer-events: none; }
+.header_logo { width: 10%; }
 .header_menu { width: 90%; }
 
 .header_menu, .header_menuNav, .header_menuAdminPanel {
@@ -43,14 +47,38 @@ h2 { font-size: 2rem; font-weight: 900; }
 
 .header_menuNav { flex-basis: 600px; }
 .header_menuAdminPanel { flex-basis: 230px; }
-.header_menuNavButton { cursor: pointer; }
-.header_menuAdminPanelButton { 
+.header_menuNavButton { cursor: pointer; margin-top: 5px;}
+.header_menuAdminPanelButton {
+	max-width: 143px;
+	margin-top: 5px; 
 	cursor: pointer;
 	display: flex;
 	align-items: center;
-
+	flex-flow: row wrap;
 }
-.header_menuAdminPanelButtonImage { margin-right: 9px; }
+
+.hoverButtonAnimation:after {
+	content: '';
+	width: 100%;
+	height: 1px;
+	display: block;
+	margin-top: 4px;
+	left: 0;
+	top: 0;
+	background-color: #2f8ded;
+	transform: scaleX(0);
+	transform-origin: bottom right;
+	transition: transform ease-out 0.25s, background-color linear 0.1s;
+}
+.hoverButtonAnimation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+.hoverButtonAnimation:active:after {
+	background-color: #093d9c;
+}
+
+.header_menuAdminPanelButtonImage { margin-right: 9px; margin-bottom: 5px; }
 
 .offer {
 	display: flex;
@@ -70,14 +98,13 @@ h2 { font-size: 2rem; font-weight: 900; }
 	border-radius: 5px;
 	background: linear-gradient(180deg, #389fff, #093d9c);
 	box-shadow: 0 5px 20px 0px rgba(73, 144, 255, 0.15);
-	transition: 0.1s linear;
+	transition: 0.25s linear;
 	user-select: none;
 }
 .offer_button:hover {
 	cursor: pointer;
 	box-shadow: 0 5px 20px 0px rgba(73, 144, 255, 0.15),
-				inset 0 0 20px 0px rgba(170, 170, 170, 0.3); /* 73 144 255*/
-	transition: 0.1s linear;
+				inset 0 0 20px 10px rgba(170, 170, 170, 0.3); /* 73 144 255*/
 }
 .offer_button:active {
 	cursor: pointer;
@@ -106,7 +133,6 @@ h2 { font-size: 2rem; font-weight: 900; }
 .navTip {
 	flex-basis: 1200px;
 	height: 76px;
-	pointer-events: none;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
@@ -135,7 +161,6 @@ h2 { font-size: 2rem; font-weight: 900; }
 	justify-content: space-between;
 
 }
-
 .screen2_text h2 {
 	color: #171840;
 }
@@ -146,7 +171,6 @@ h2 { font-size: 2rem; font-weight: 900; }
 .screen2_text span {
 	color: #898c9f;
 }
-
 
 
 
