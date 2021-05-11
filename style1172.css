@@ -11,10 +11,12 @@
 	display: none;
 }
 
-.screen__car-image, .screen__article {
+.screen__car-image {
 	padding: 0;
 	margin: 50px 0;
 }
 .screen__article {
+	padding: 0;
+	margin-bottom: 50px;
 	width: 568px;
 }

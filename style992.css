@@ -1,3 +1,4 @@
 ﻿.header { justify-content: center;  }
 .header__logo { width: auto; }
 .header__row-menu {	display: none; }
+.offer__button { width: 306px; }

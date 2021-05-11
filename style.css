@@ -91,7 +91,7 @@ h2 { font-size: 2rem; font-weight: 900; }
 .offer__text {
 	margin: 45px 0;
 	color: #aaa7a7;
-	width: 500px;
+	max-width: 500px;
 }
 .offer__button {
 	line-height: 60px;
