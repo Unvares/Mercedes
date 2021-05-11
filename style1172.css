@@ -1,0 +1,20 @@
+﻿.screen__content {
+	justify-content: center;
+}
+
+.offer {
+	text-align: center;
+	align-items: center;
+}
+
+.screen__car-wrapper {
+	display: none;
+}
+
+.screen__car-image, .screen__article {
+	padding: 0;
+	margin: 50px 0;
+}
+.screen__article {
+	width: 568px;
+}

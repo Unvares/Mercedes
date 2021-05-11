@@ -5,70 +5,69 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="style.css">
-
+	<link rel="stylesheet" href="style1172.css" media="screen and (max-width:1172px)">
+	<link rel="stylesheet" href="style992.css" media="screen and (max-width:992px)">
 	<title>Mercedes</title>
 </head>
 <body>
-	<div class="screen1">
-		<div class="content">
+	<div class="screen screen__background1">
+		<article class="screen__content">
 			<header class="header">
-				<div class="header_logo monolite">
+				<section class="header__logo">
 					<img src="images/logo.png" alt="logo">
-				</div>
-				<div class="header_menu">
-					<div class="header_menuNav">
-						<div class="header_menuNavButton hoverButtonAnimation">Модельный ряд</div>
-						<div class="header_menuNavButton hoverButtonAnimation">Купить</div>
-						<div class="header_menuNavButton hoverButtonAnimation">Владельцам</div>
-						<div class="header_menuNavButton hoverButtonAnimation">Мир Mercedes Benz</div>
-					</div>
-					<div class="header_menuFiller"></div>
-					<div class="header_menuAdminPanel">
-						<div class="header_menuAdminPanelButton">
-							<img src="thumbnails/key.png" class="header_menuAdminPanelButtonImage" alt="key">
-							<span class="hoverButtonAnimation">Защита данных</span>
-						</div>
-						<div class="header_menuAdminPanelButton">
-								<img src="thumbnails/user.png" class="header_menuAdminPanelButtonImage" alt="user">
-								<span class="hoverButtonAnimation">Вход</span>
-						</div>
-					</div>
-				</div>
-				</header>
-			<div class="offer">
+				</section>
+				<nav class="header__row-menu row-menu">
+					<section class="row-menu__navigator">
+						<a href="" class="row-menu__button row-menu__button_hover">Модельный ряд</a>
+						<a href="" class="row-menu__button row-menu__button_hover">Купить</a>
+						<a href="" class="row-menu__button row-menu__button_hover">Владельцам</a>
+						<a href="" class="row-menu__button row-menu__button_hover">Мир Mercedes Benz</a>
+					</section>
+					<div class="row-menu__filler"></div>
+					<section class="row-menu__admin-panel">
+						<a href="" class="row-menu__button row-menu__admin-button">
+							<img src="thumbnails/key.png" class="row-menu__thumbnail" alt="key">
+							<span class="row-menu__button_hover">Защита данных</span>
+						</a>
+						<a href="" class="row-menu__button row-menu__admin-button">
+								<img src="thumbnails/user.png" class="row-menu__thumbnail" alt="user">
+								<span class="row-menu__button_hover">Вход</span>
+						</a>
+					</section>
+				</nav>
+			</header>
+			<section class="offer">
 				<h1>Новая серия автомобилей Mercedes Benz</h1>
-				<p class="offer_text">Ваше верное решение в наших условиях</p>
-				<div class="offer_button">Тест-драйв</div>
-			</div>
-			<div class="carWrapper monolite">
+				<p class="offer__text">Ваше верное решение в наших условиях</p>
+				<a href="" class="offer__button">Тест-драйв</a>
+			</section>
+			<section class="screen__car-wrapper">
+				<img src="images/screen1_carBacklight.png" class="screen__car-backlight" alt="car">
 				<img src="images/screen1_car.png" alt="car">
-				<img src="images/screen1_carBacklight.png" class="carBacklight" alt="car">
-			</div>
-			<div class="navTip monolite">
-				<div class="navTip_tip">
+			</section>
+			<footer class="screen__hint-container">
+				<section class="screen__hint">
 					<img src="thumbnails/left-arrow.png" alt="arrow">
-					<span class="navTip_tipText">Листайте вниз</span>
-				</div>
-				<div class="navTip_date">
-					<img src="images/2018.png" alt="date">
-				</div>
-			</div>
-		</div>
+					<span class="screen__hint-text">Листайте вниз</span>
+				</section>
+				<img src="images/2018.png" alt="date">
+			</footer>
+		</article>
 	</div>
-	<div class="screen2">
-		<div class="content">
-			<img src="images/screen2_car.png" class="screen2_car monolite" alt="car">
-			<section class="screen2_text">
-				<h2>Комфорт по стандартам <br> C-класса</h2>
-				<p>
+	<div class="screen screen__background2">
+		<article class="screen__content">
+			<img src="images/screen2_car.png" class="screen__car-image" alt="car">
+			<article class="screen__article">
+				<h2 class="screen__article-header">Комфорт по стандартам <br> C-класса</h2>
+				<p class="screen__article-paragraph">
 					Хотите ярких эмоций? Их дарит новое купе Mercedes-AMG C  43 4Matic. К его наиболее выразительными опознавательным признакам относятся: решетка радиатора AMG с характерной двойной ламелью, мощный передний бампер и новый задний бампер с двумя парами выхлопных патрубков.
 					<br>
 					<br>
 					3-литровый битурбированный двигатель V6, став мощнее своего предшественника на 23 л. с., выдает благодаря своему потенциалу 390 л. с., и это действительно впечатляющие динамические показатели. 
 				</p>
-				<span>Читать далее</span>
-			</section>
-		</div>
+				<a href="" class="screen__article-link screen__article-link_hover">Читать далее</a>
+			</article>
+		</article>
 	</div>
 </body>
 </html>
